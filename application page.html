@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - Hot Beans</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .bg-image {
+            background-image: url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body class="bg-image">
+
+    <!-- Navigation -->
+    <div class="w3-bar w3-black">
+        <a href="home page.html" class="w3-bar-item w3-button">Home</a>
+        <a href="staff.html" class="w3-bar-item w3-button">Staff</a>
+        <a href="job description.html" class="w3-bar-item w3-button">Job Description</a>
+        <a href="application form.html" class="w3-bar-item w3-button">Application Form</a>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-section">
+        <h2>Job Application Form</h2>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required>
+
+            <label>Position Applying For</label>
+            <select name="position">
+                <option>Software Developer</option>
+                <option>IT Support Specialist</option>
+                <option>Cybersecurity Analyst</option>
+            </select>
+
+            <label>Why do you want this job?</label>
+            <textarea rows="4"></textarea>
+
+            <label>Upload CV</label>
+            <input type="file">
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-black w3-center w3-padding-16">
+        <p>
+            Powered by 
+            <a href="https://www.w3schools.com/w3css/" target="_blank" class="w3-hover-text-blue">
+                w3.css
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
